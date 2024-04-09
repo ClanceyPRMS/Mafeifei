@@ -1377,25 +1377,19 @@ nav ul li a {
 
 </style>
 <script>
-// const toggle = document.querySelector('#nav-toggle');
-// const ul = document.querySelector('nav ul');
-// toggle.addEventListener('click', (e) => {
-//     e.preventDefault();
-//     let computestyle = getComputedStyle(ul);
-//     if (computestyle.display != 'none') {
-//         ul.style.display = 'none';
-//         toggle.classList.remove('active');
-//     } else {
-//         ul.style.display = 'block';
-//         toggle.classList.add('active');
-//     }
-// });
-
-$('#nav-toggle').click(function(e) {
-    e.preventDefault();
-    $('nav ul').slideToggle('slow');
-    $(this).toggleClass('active');
-});
+ const toggle = document.querySelector('#nav-toggle');
+ const ul = document.querySelector('nav ul');
+ toggle.addEventListener('click', (e) => {
+     e.preventDefault();
+    let computestyle = getComputedStyle(ul);
+     if (computestyle.display != 'none') {
+       ul.style.display = 'none';
+         toggle.classList.remove('active');
+     } else {
+        ul.style.display = 'block';
+        toggle.classList.add('active');
+     }
+ });
 </script>
 </head>
 <body>
