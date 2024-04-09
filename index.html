@@ -1377,6 +1377,7 @@ nav ul li a {
 
 </style>
 <script>
+function topnav(){
  const toggle = document.querySelector('#nav-toggle');
  const ul = document.querySelector('nav ul');
  toggle.addEventListener('click', (e) => {
@@ -1390,6 +1391,7 @@ nav ul li a {
         toggle.classList.add('active');
      }
  });
+ }
 </script>
 </head>
 <body>
@@ -1398,7 +1400,7 @@ nav ul li a {
     <a href="index.html">马菲菲档案</a>
   </div>
   <nav>
-    <div class="nav-responsive"><a id="nav-toggle" href="/"><span></span></a></div>
+    <div class="nav-responsive"><a id="nav-toggle" href="javascript:void(0);" onclick="topnav()"><span></span></a></div>
     <ul class="navlist">
       <li><a href="index.html">主页</a></li>
       <li><a href="/archive/index.html">人物档案</a></li>
